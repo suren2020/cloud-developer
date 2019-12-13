@@ -15,6 +15,7 @@ const delay = require('delay');
   const port = process.env.PORT || 8082;
 
   // Use the body parser middleware for post requests
+  //
   app.use(bodyParser.json());
 
   app.get( "/filteredimage/", async ( req: Request, res: Response ) => {
